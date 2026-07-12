@@ -71,17 +71,15 @@ img{max-width:100%;display:block}
 .bat{position:absolute;width:20px;height:10px;z-index:2;opacity:.92}.bat:before,.bat:after{content:'';position:absolute;top:0;width:11px;height:10px;background:#17131d}.bat:before{left:0;border-radius:11px 11px 0 11px;transform:rotate(18deg)}.bat:after{right:0;border-radius:11px 11px 11px 0;transform:rotate(-18deg)}
 .bat-one{right:26%;top:14%;transform:scale(.9) rotate(-10deg)}.bat-two{right:18%;top:11%;transform:scale(1.15) rotate(8deg)}.bat-three{right:9%;top:19%;transform:scale(.8) rotate(12deg)}
 .collection-bats{position:absolute;right:14%;top:16%;width:180px;height:80px;pointer-events:none}.collection-bats .bat{position:absolute}
-.moon-bats{position:absolute;right:3%;top:0;width:76%;height:62%;z-index:3;pointer-events:none}
-.moon-bat{position:absolute;width:34px;height:18px;color:#1a101c;filter:drop-shadow(0 2px 2px rgba(255,222,166,.3))}
+.moon-bats{position:absolute;right:2%;top:0;width:82%;height:64%;z-index:3;pointer-events:none}
+.moon-bat{position:absolute;width:clamp(58px,8vw,88px);aspect-ratio:2/1;color:#17101b;filter:drop-shadow(0 3px 3px rgba(255,222,166,.32))}
 .moon-bat svg{width:100%;height:100%;display:block;overflow:visible;animation:moon-bat-hover 5.5s ease-in-out infinite}
-.moon-bat path{fill:currentColor;stroke:rgba(255,239,212,.48);stroke-width:1.2;paint-order:stroke}
-.moon-bat-a{left:2%;top:38%;transform:rotate(-11deg) scale(.88)}
-.moon-bat-b{left:33%;top:5%;transform:rotate(7deg) scale(.72)}
-.moon-bat-c{right:4%;top:28%;transform:rotate(13deg) scale(.92)}
-.moon-bat-d{left:20%;bottom:3%;transform:rotate(5deg) scale(1.05)}
-.moon-bat-e{right:20%;bottom:10%;transform:rotate(-8deg) scale(.78)}
-.moon-bat-b svg,.moon-bat-e svg{animation-delay:-1.8s}.moon-bat-c svg{animation-delay:-3.1s}.moon-bat-d svg{animation-delay:-4.2s}
-@keyframes moon-bat-hover{0%,100%{translate:0 0}50%{translate:0 -5px}}
+.moon-bat path{fill:currentColor;stroke:rgba(255,239,212,.58);stroke-width:1.4;paint-order:stroke}
+.moon-bat-a{left:0;top:34%;transform:rotate(-10deg) scale(.88)}
+.moon-bat-b{left:38%;top:3%;transform:rotate(7deg) scale(.72)}
+.moon-bat-c{right:0;top:36%;transform:rotate(12deg)}
+.moon-bat-b svg{animation-delay:-1.8s}.moon-bat-c svg{animation-delay:-3.1s}
+@keyframes moon-bat-hover{0%,100%{translate:0 0}50%{translate:0 -6px}}
 .quick-shop{display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid var(--line);background:#fff}
 .quick-shop a{min-height:140px;padding:20px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);display:flex;flex-direction:column;justify-content:flex-end;gap:3px}
 .quick-shop strong{font-family:var(--serif);font-size:1.25rem}.quick-shop small{color:#78675d;font-size:.75rem}
@@ -286,7 +284,7 @@ section[id],a[id]{scroll-margin-top:84px}
           <a class="button button-secondary" href="halloween.html">Enter Halloween</a>
         </div>
       </div>
-      <div class="hero-art" aria-hidden="true"><div class="moon"></div><div class="moon-bats"><span class="moon-bat moon-bat-a"><svg viewBox="0 0 64 24" aria-hidden="true" focusable="false"><path d="M32 15C27 8 22 6 18 8C15 3 9 1 2 3C6 7 7 12 6 18C12 14 17 15 22 20C25 17 28 16 32 19C36 16 39 17 42 20C47 15 52 14 58 18C57 12 58 7 62 3C55 1 49 3 46 8C42 6 37 8 32 15Z"></path></svg></span><span class="moon-bat moon-bat-b"><svg viewBox="0 0 64 24" aria-hidden="true" focusable="false"><path d="M32 15C27 8 22 6 18 8C15 3 9 1 2 3C6 7 7 12 6 18C12 14 17 15 22 20C25 17 28 16 32 19C36 16 39 17 42 20C47 15 52 14 58 18C57 12 58 7 62 3C55 1 49 3 46 8C42 6 37 8 32 15Z"></path></svg></span><span class="moon-bat moon-bat-c"><svg viewBox="0 0 64 24" aria-hidden="true" focusable="false"><path d="M32 15C27 8 22 6 18 8C15 3 9 1 2 3C6 7 7 12 6 18C12 14 17 15 22 20C25 17 28 16 32 19C36 16 39 17 42 20C47 15 52 14 58 18C57 12 58 7 62 3C55 1 49 3 46 8C42 6 37 8 32 15Z"></path></svg></span><span class="moon-bat moon-bat-d"><svg viewBox="0 0 64 24" aria-hidden="true" focusable="false"><path d="M32 15C27 8 22 6 18 8C15 3 9 1 2 3C6 7 7 12 6 18C12 14 17 15 22 20C25 17 28 16 32 19C36 16 39 17 42 20C47 15 52 14 58 18C57 12 58 7 62 3C55 1 49 3 46 8C42 6 37 8 32 15Z"></path></svg></span><span class="moon-bat moon-bat-e"><svg viewBox="0 0 64 24" aria-hidden="true" focusable="false"><path d="M32 15C27 8 22 6 18 8C15 3 9 1 2 3C6 7 7 12 6 18C12 14 17 15 22 20C25 17 28 16 32 19C36 16 39 17 42 20C47 15 52 14 58 18C57 12 58 7 62 3C55 1 49 3 46 8C42 6 37 8 32 15Z"></path></svg></span></div><div class="hill hill-back"></div><div class="hill hill-front"></div><div class="tree tree-one"></div><div class="tree tree-two"></div><div class="house"><span></span><i></i></div><div class="stars"></div></div>
+      <div class="hero-art" aria-hidden="true"><div class="moon"></div><div class="moon-bats"><span class="moon-bat moon-bat-a"><svg viewBox="0 0 100 50" aria-hidden="true" focusable="false"><path d="M50 25C44 16 39 13 34 15C29 8 20 4 8 6C14 12 15 20 11 29C20 25 29 27 37 35C41 30 45 28 50 32C55 28 59 30 63 35C71 27 80 25 89 29C85 20 86 12 92 6C80 4 71 8 66 15C61 13 56 16 50 25Z"></path></svg></span><span class="moon-bat moon-bat-b"><svg viewBox="0 0 100 50" aria-hidden="true" focusable="false"><path d="M50 25C44 16 39 13 34 15C29 8 20 4 8 6C14 12 15 20 11 29C20 25 29 27 37 35C41 30 45 28 50 32C55 28 59 30 63 35C71 27 80 25 89 29C85 20 86 12 92 6C80 4 71 8 66 15C61 13 56 16 50 25Z"></path></svg></span><span class="moon-bat moon-bat-c"><svg viewBox="0 0 100 50" aria-hidden="true" focusable="false"><path d="M50 25C44 16 39 13 34 15C29 8 20 4 8 6C14 12 15 20 11 29C20 25 29 27 37 35C41 30 45 28 50 32C55 28 59 30 63 35C71 27 80 25 89 29C85 20 86 12 92 6C80 4 71 8 66 15C61 13 56 16 50 25Z"></path></svg></span></div><div class="hill hill-back"></div><div class="hill hill-front"></div><div class="tree tree-one"></div><div class="tree tree-two"></div><div class="house"><span></span><i></i></div><div class="stars"></div></div>
     </section>
 
     <section class="section collection-intro">
